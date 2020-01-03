@@ -5,9 +5,15 @@
 
 In this lesson, we'll learn about **_Amazon SageMaker_**, and explore some of the common use cases it covers for data scientists. 
 
+
+## Objectives
+
+- List the use cases of Amazon SageMaker 
+
+
 ## What is SageMaker?
 
-SageMaker is a platform created by Amazon to centralize all the various services related to Data Science and Machine Learning. If you're a data scientist working on AWS, chances are that you'll be spending most (if not all) of your time in SageMaker getting things done. You can get to SageMaker by just searching for "SageMaker" inside the spotlight search bar on in the AWS Console. 
+SageMaker is a platform created by Amazon to centralize all the various services related to Data Science and Machine Learning. If you're a data scientist working on AWS, chances are that you'll be spending most (if not all) of your time in SageMaker getting things done. You can get to SageMaker by just searching for "SageMaker" inside the spotlight search bar in the AWS Console. 
 
 <img src='images/sagemaker.png'>
 
@@ -32,7 +38,7 @@ Recently, Amazon launched an automated labeling service that makes use of machin
 
 ### Notebooks
 
-These are exactly what they sound like--cloud-based jupyter notebooks, a data scientist's 'bread and butter'!  SageMaker notebooks are just like regular jupyter notebooks, with a bit more added functionality. For instance, it's quite easy to choose from a bunch of pre-configured kernels to select which version of python/TensorFlow/etc you want to use. You can start a notebook from scratch inside SageMaker and do all of your work in the cloud, or you can upload preexisting notebooks into SageMaker, allowing you to do you work on a local machine and move it over to the cloud when you're ready for training!
+These are exactly what they sound like -- cloud-based jupyter notebooks, a data scientist's 'bread and butter'!  SageMaker notebooks are just like regular jupyter notebooks, with a bit more added functionality. For instance, it's quite easy to choose from a bunch of pre-configured kernels to select which version of Python/TensorFlow/etc. you want to use. You can start a notebook from scratch inside SageMaker and do all of your work in the cloud, or you can upload preexisting notebooks into SageMaker, allowing you to do you work on a local machine and move it over to the cloud when you're ready for training!
 
 We strongly recommend you take a minute to poke around inside a SageMaker notebook to get a feel for what it looks like and what it can do. They're pretty amazing!
 
@@ -40,11 +46,11 @@ We strongly recommend you take a minute to poke around inside a SageMaker notebo
 
 ### Training
 
-SageMaker's training services allow you to easily leverage cloud computing with AWS's specialized GPU and TPU servers, allowing you to train massive models that simply wouldn't be possible on a local machine. There are a ton of configuration options, and you can easily budgets, limits, training times, and even auto-tune your hyperparameters! Although this is outside the scope of our lessons on AWS, Amazon provides some pretty amazing (and fast!) tutorials about how to use more specific services like cloud training or [model tuning](https://aws.amazon.com/blogs/aws/sagemaker-automatic-model-tuning/) once you've completed this section! 
+SageMaker's training services allow you to easily leverage cloud computing with AWS's specialized GPU and TPU servers, allowing you to train massive models that simply wouldn't be possible on a local machine. There are a ton of configuration options, and you can easily set budgets, limits, training times, and even auto-tune your hyperparameters! Although this is outside the scope of our lessons on AWS, Amazon provides some pretty amazing (and fast!) tutorials about how to use more specific services like cloud training or [model tuning](https://aws.amazon.com/blogs/aws/sagemaker-automatic-model-tuning/) once you've completed this section! 
 
 ### Inference
 
-Arguably the most important part of the data science pipeline, **_Inference_** services focus on allowing you to create endpoints so that people can consume your models over the internet! One of the most handy parts of SageMaker's approach to inference is the fact that you can productionize your own model, or just use one of theirs! While there are certainly times where you'll need to create, train, and host your own model, AWS has made things simple by allowing you to use their own models and charging you on a per-use basis. For instance, let's say that you needed to make some time series forecasts. While you could go down the very complicated route of training your own model, you could also just make use of AWS SageMaker's DeepAR model, which uses the most cutting-edge time series model available to make forecasts on your data. 
+Arguably the most important part of the data science pipeline, **_Inference_** services focus on allowing you to create endpoints so that people can consume your models over the internet! One of the most handy parts of SageMaker's approach to inference is the fact that you can productionize your own model, or just use one of theirs! While there are certainly times where you'll need to create, train, and host your own model, AWS has made things simple by allowing you to use their own models and charging you on a per-use basis. For instance, let's say that you needed to make some time series forecasts. While you could go down the very complicated route of training your own model, you could also just make use of AWS SageMaker's *DeepAR* model, which uses the most cutting-edge time series model available to make forecasts on your data. 
 
 ## Summary
 
